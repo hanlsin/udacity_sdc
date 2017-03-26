@@ -80,7 +80,7 @@ color_edges = np.dstack((edges, edges, edges))
 
 # Draw the lines on the edge image
 line_edges = cv2.addWeighted(color_edges, 0.8, line_image, 1, 0)
-#cv2.imshow("line edges", line_edges)
+cv2.imshow("line edges", line_edges)
 
 key = cv2.waitKey(0)
 if key == 27:   # wait for ESC
